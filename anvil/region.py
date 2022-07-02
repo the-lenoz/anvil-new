@@ -92,7 +92,6 @@ class Region:
         chunk_z
             Chunk's Z value
         
-        
         :rtype: :class:`anvil.Chunk`
         """
         return anvil.Chunk.from_region(self, chunk_x, chunk_z)

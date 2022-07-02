@@ -24,7 +24,7 @@ class EmptyChunk:
         self.x = x
         self.z = z
         self.sections: List[EmptySection] = [None]*16
-        self.version = 1976
+        self.version = 2566
 
     def add_section(self, section: EmptySection, replace: bool = True):
         """

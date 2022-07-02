@@ -1,6 +1,6 @@
 from typing import Union, Tuple, Generator, Optional
 from nbt import nbt
-from .block import Block, OldBlock
+from .block import Block
 from .region import Region
 from .errors import OutOfBoundsCoordinates, ChunkNotFound
 import math

@@ -49,7 +49,7 @@ class EmptySection:
         int x, y, z
             Coordinates
         """
-        return x >= 0 and x <= 15 and y >= 0 and y <= 15 and z >= 0 and z <= 15
+        return x >= 0 and x <= 15 and y >= -4 and y <= 19 and z >= 0 and z <= 15
 
     def set_block(self, block: Block, x: int, y: int, z: int):
         """

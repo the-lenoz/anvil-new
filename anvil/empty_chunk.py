@@ -55,7 +55,7 @@ class EmptyChunk:
         int x, z
             In range of 0 to 15
         y
-            In range of 0 to 255
+            In range of -64 to 319
 
         Raises
         ------
@@ -72,8 +72,8 @@ class EmptyChunk:
             raise OutOfBoundsCoordinates(f'X ({x!r}) must be in range of 0 to 15')
         if z < 0 or z > 15:
             raise OutOfBoundsCoordinates(f'Z ({z!r}) must be in range of 0 to 15')
-        if y < 0 or y > 255:
-            raise OutOfBoundsCoordinates(f'Y ({y!r}) must be in range of 0 to 255')
+        if y < -63 or y > 319:
+            raise OutOfBoundsCoordinates(f'Y ({y!r}) must be in range of -63 to 319')
         section = self.sections[y // 16]
         if section is None:
             return
@@ -100,8 +100,8 @@ class EmptyChunk:
             raise OutOfBoundsCoordinates(f'X ({x!r}) must be in range of 0 to 15')
         if z < 0 or z > 15:
             raise OutOfBoundsCoordinates(f'Z ({z!r}) must be in range of 0 to 15')
-        if y < 0 or y > 255:
-            raise OutOfBoundsCoordinates(f'Y ({y!r}) must be in range of 0 to 255')
+        if y < -63 or y > 319:
+            raise OutOfBoundsCoordinates(f'Y ({y!r}) must be in range of -63 to 319')
         section = self.sections[y // 16]
         if section is None:
             section = EmptySection(y // 16)

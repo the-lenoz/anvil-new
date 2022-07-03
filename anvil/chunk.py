@@ -93,7 +93,7 @@ class Chunk:
         return tuple(Block.from_palette(i) for i in section['block_states']['palette'])
         
 
-    def get_block(self, x: int, y: int, z: int, section: Union[int, nbt.TAG_Compound]=None) -> Union[Block, OldBlock]:
+    def get_block(self, x: int, y: int, z: int, section: Union[int, nbt.TAG_Compound]=None) -> Block:
         """
         Returns the block in the given coordinates
 

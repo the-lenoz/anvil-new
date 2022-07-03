@@ -5,7 +5,7 @@ with open('README.md', 'r') as file:
 
 setuptools.setup(
     name='anvil-new',
-    version='1.0.0',
+    version='1.0.1',
     author='intergalactyc',
     description='A Minecraft anvil file format parser, designed to work with minecraft versions 1.16+.',
     long_description=long_description,

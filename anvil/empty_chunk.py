@@ -23,7 +23,7 @@ class EmptyChunk:
     def __init__(self, x: int, z: int, max_height: int = 319):
         self.x = x
         self.z = z
-        self.sections: List[EmptySection] = [None] * ((max_height + 1) / 16 + 4)
+        self.sections: List[EmptySection] = [None] * int((max_height + 65) / 16)
         self.version = 2566
 
     def add_section(self, section: EmptySection, replace: bool = True):
